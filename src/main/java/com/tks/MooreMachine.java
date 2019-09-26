@@ -64,14 +64,17 @@ public class MooreMachine extends DFA{
         char[] inputs = input.toCharArray();
         StringBuilder output = new StringBuilder();
         int currentState = this.initialState;
+        char out = this.outputs[currentState];
+        if (out != '@') {
+            output.append(out);
+        }
         for (char term : inputs) {
             int index = linearSearch(this.terminals, term);
-            int nextState = this.stateTransition[currentState][index];
-            char out = this.outputs[currentState];
+            currentState = this.stateTransition[currentState][index];
+            out = this.outputs[currentState];
             if (out != '@') {
                 output.append(out);
             }
-            currentState = nextState;
         }
         return output.toString();
     }
