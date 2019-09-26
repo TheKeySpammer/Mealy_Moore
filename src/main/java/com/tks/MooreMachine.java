@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class MooreMachine extends DFA{
+    private static final long serialVersionUID = 3L;
     private char[] outputs;
 
     private MooreMachine(int noStates, char[] terminals, int[][] stateTransition,
@@ -66,7 +67,7 @@ public class MooreMachine extends DFA{
         for (char term : inputs) {
             int index = linearSearch(this.terminals, term);
             int nextState = this.stateTransition[currentState][index];
-            int out = this.outputs[currentState];
+            char out = this.outputs[currentState];
             if (out != '@') {
                 output.append(out);
             }

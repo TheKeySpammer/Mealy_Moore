@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 
 
 public class MealyMachine extends DFA {
+    private static final long serialVersionUID = 2L;
     private char[] outputs;
     private int[][] outputFunction;
 

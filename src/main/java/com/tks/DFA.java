@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class DFA implements Serializable {
     
-    private static final long serialVersionUID = 3454372386246721566L;
+    private static final long serialVersionUID = 1L;
      int numberOfStates;
      int initialState;
      char[] terminals;
