@@ -1,0 +1,10 @@
+oneCmpMoore
+Moore machine that can find 1's complement of input
+0 1
+3
+2 1
+2 1
+2 1
+@
+0
+1

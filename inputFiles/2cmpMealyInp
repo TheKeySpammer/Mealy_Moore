@@ -1,0 +1,9 @@
+twoCompMealy
+Mealy machine that computes two's complemet of given input
+0 1
+2
+0 1
+1 1
+0 1
+0 1
+1 0
